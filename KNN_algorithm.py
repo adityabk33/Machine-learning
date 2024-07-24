@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # Import libraries
 import numpy as np
 import pandas as pd
@@ -12,16 +6,6 @@ from statistics import mode
 from sklearn.model_selection import train_test_split
 import statistics
 from matplotlib import pyplot as plt
-
-
-# In[2]:
-
-
-
-
-
-# In[2]:
-
 
 class KNN:
     def __init__(self, k, X, Y):
@@ -40,41 +24,7 @@ class KNN:
             prediction.append(most_common)
         return prediction
 
-
-# In[9]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[6]:
-
-
-#Loading the dataset. As it is very famous it was easily retrievable so I just downloaded it here.
+#Loading the dataset.
 
 iris = datasets.load_iris()
 X, Y = iris.data, iris.target
@@ -190,22 +140,6 @@ plt.ylabel('Accuracy')
 plt.title('Accuracy vs. kodd for the testing set after removing normalisation')
 
 plt.show()
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
